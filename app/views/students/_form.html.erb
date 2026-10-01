@@ -22,6 +22,11 @@
   </div>
 
   <div>
+    <%= form.collection_checkboxes :course_ids, Course.order(:name), :id, :name %>
+  </div>
+
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
